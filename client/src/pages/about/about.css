@@ -1,0 +1,51 @@
+.top-about {
+  background: #abc9db;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 3rem;
+  direction: rtl;
+  font-weight: 600;
+}
+.about-container p {
+  margin: auto;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+/* media query for mobile */
+@media (max-width: 768px) {
+  .about-container p {
+    font-size: 17px;
+  }
+}
+.about-container span {
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+.bottom-about {
+  padding-top: 3rem;
+  background-color: #f5fcff;
+  color: #6097bf;
+  width: 100%;
+  direction: rtl;
+  font-weight: 600;
+}
+
+.gali-simha-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+#gali-simha-img {
+  width: 100px;
+}
+.gali-simha-text {
+  text-align: center;
+  padding-top: 0 !important;
+  font-size: 15px;
+  padding-right: 65px;
+}
+.about_lifecloud {
+  font-size: 28px;
+}

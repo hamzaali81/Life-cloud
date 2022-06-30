@@ -1,0 +1,944 @@
+.profile-cover {
+  width: 100%;
+  max-height: 50vh;
+  object-position: 0 50%;
+}
+
+.profile-details-first {
+  direction: rtl;
+  /* height: 400px; */
+  background-color: #abc9db;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: -6px;
+  padding: 2.5rem 0;
+}
+.list-of-deceased-container {
+  margin-bottom: 75px;
+}
+.hideBtn {
+  display: none;
+}
+.profile-details-cover-btns {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* .profile-h1 {
+    font-size: 60px;
+} */
+
+.left-cloud {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 33vw;
+  max-width: 380px;
+}
+
+.profile-details .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 100%;
+  /* margin-left: 15%; */
+  /* margin: 0 84px 0px 44px; */
+  margin: 0 4rem 0px 1.5rem;
+}
+
+.deceased-details {
+  display: flex;
+  color: #fff;
+  /* font-size: 25px; */
+  font-weight: bolder;
+  margin-left: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.profile-details .btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 140px;
+}
+.qr-modal {
+  background-color: initial;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+.big-btns-container,
+.small-btns-container {
+  display: flex;
+}
+
+.profile-small-btn {
+  background: #6097bf;
+  border-radius: 4px;
+  color: #ffff;
+  text-align: center;
+  padding: 4px 0.4rem;
+  justify-content: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 4rem;
+  z-index: 200;
+}
+
+.list-of-deceased {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+}
+
+.profile-big-btn {
+  display: flex;
+  background: #6097bf;
+  border-radius: 4px;
+  color: #ffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  min-width: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
+  z-index: 200;
+}
+
+.d-none {
+  display: none;
+}
+
+.active {
+  background-color: #dcecf4;
+  color: #6097bf;
+}
+
+.memorial-container,
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.memorial-container {
+  background: #dcecf4;
+}
+.profile-details-title {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.profile-details-title h1 {
+  color: #6097bf;
+  margin-bottom: 2rem;
+}
+
+.details-and-icons {
+  direction: rtl;
+  background-color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 12px 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-and-icons h3 {
+  color: #6097bf;
+  margin: 8px 0;
+}
+.memorial-details .dash {
+  display: none;
+}
+.wall-main-container {
+  align-self: self-end;
+}
+
+.profile-details .icon-btn {
+  width: 2rem;
+  margin-left: 20px;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+/* .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #6097bf;
+    font-size: 30px;
+} */
+
+.gallery .imgs-container {
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+.gallery-img {
+  height: 240px;
+  width: 240px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0px 8px;
+  border: 1px solid #6097bf;
+}
+
+.last-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6097bf;
+  font-size: 75px;
+  font-weight: 100;
+}
+
+/* .gallery-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+} */
+
+.full-btn {
+  text-align: center;
+  color: #6097bf;
+  font-size: 30px;
+  height: 50px;
+  width: 265px;
+  border: 2px solid #6097bf;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  transition: ease-in-out 0.5s;
+  z-index: 200;
+}
+.full-btn:hover {
+  background-color: #6097bf;
+  color: #fff;
+}
+.back-btn {
+  width: initial;
+  border-color: transparent;
+  text-align: center;
+  color: #6097bf;
+  font-size: 30px;
+  height: 50px;
+  width: 265px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  transition: ease-in-out 0.5s;
+}
+.full-btn.back-btn img {
+  width: 44px;
+  margin: 0 12px;
+}
+
+.full-memory-btn {
+  text-align: center;
+  color: #6097bf;
+  font-size: 30px;
+  height: 50px;
+  width: 265px;
+  border: 2px solid #6097bf;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out 0.5s;
+  z-index: 200;
+}
+@media only screen and (max-width: 768px) {
+  .full-memory-btn {
+    width: 120px;
+    font-size: 18px;
+  }
+  .full-btn {
+    width: 120px;
+    font-size: 18px;
+  }
+}
+.full-memory-btn:hover {
+  background-color: #6097bf;
+  color: #fff;
+}
+.grave-location-container {
+  margin-top: 5rem;
+  background-color: #dcecf4;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.grave-location-title {
+  text-align: center;
+  color: #6097bf;
+  font-size: 50px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .profile_details_section_title {
+    font-size: 32px !important;
+  }
+}
+
+.grave-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+.grave-imgs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  .grave-imgs-container {
+    flex-direction: column;
+  }
+}
+
+.navigation-btn {
+  display: flex;
+  background: #fff;
+  height: 44px;
+  width: 120px;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  margin: auto;
+  margin-top: 2rem;
+  color: #6097bf;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 200;
+}
+.navigation-btn img {
+  width: 28px;
+}
+
+.hidden {
+  display: none;
+}
+
+.memories-title {
+  text-align: center;
+  color: #6097bf;
+  font-size: 50px;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-memory {
+  width: 100%;
+  padding: 2rem;
+  background: #6097bf;
+  border-radius: 15px;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  text-align: center;
+}
+
+.memory {
+  color: #abc9db;
+  font-size: 200px;
+  width: 40%;
+  height: 40%;
+  border-radius: 15px;
+  border: 1px solid #6097bf;
+  background: #dcecf4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+
+.sub-memories-container {
+  width: 131vw;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.memories-sub-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.main-memory-content {
+  font-size: 70px;
+}
+
+.com-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.com-icon {
+  display: flex;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  background: #dcecf4;
+  text-align: center;
+  text-align: -webkit-center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.com-icon-img {
+  height: 40px;
+}
+
+.com-btn {
+  margin-top: 3rem;
+}
+
+.bio-content {
+  background: #dcecf4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6097bf;
+  padding-bottom: 4rem;
+}
+
+.bio-name {
+  font-size: 50px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.bio-bio {
+  font-size: 24px;
+  text-align: center;
+  width: 80%;
+  direction: rtl;
+  white-space: pre-wrap;
+  max-height: 400px;
+  unicode-bidi: embed;
+}
+@media screen and (max-width: 768px) {
+  .bio-bio {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+
+.life-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6097bf;
+}
+
+.axis-name {
+  font-size: 50px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.axis-desc {
+  font-size: 30px;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.axis-container {
+  display: flex;
+  color: #6097bf;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.dotted-seperator {
+  transform: rotate(90deg);
+  display: inline-flex;
+  margin: auto;
+  margin-left: 55.5%;
+  /* width: 100%; */
+  color: #6097bf;
+  font-size: 57px;
+}
+
+/* Dotted-Separetor Media query */
+@media only screen and (max-width: 1368px) {
+  .dotted-seperator {
+    margin-left: 55%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .dotted-seperator {
+    margin-left: 54.5%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .dotted-seperator {
+    margin-left: 54%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .dotted-seperator {
+    margin-left: 53.5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .dotted-seperator {
+    margin-left: 53%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dotted-seperator {
+    margin-left: 52%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .dotted-seperator {
+    margin-left: 51.5%;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .dotted-seperator {
+    margin-left: 51%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .dotted-seperator {
+    margin-left: 49%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .dotted-seperator {
+    margin-left: 47%;
+  }
+}
+.axis-sub-container {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.axis-bubble {
+  margin-left: 3rem;
+  background: #abc9db;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 17px;
+}
+
+.axis-title {
+  text-align: end;
+}
+
+.axis-description2 {
+  text-align: end;
+  font-size: 14px;
+}
+
+.image-gallery-section {
+  height: 100%;
+  width: 100%;
+}
+
+.last-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 115px;
+  font-weight: 100;
+  transition: ease-in-out 500ms;
+}
+.last-image:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #6097bf;
+}
+
+.display {
+  display: block !important;
+}
+
+/* .full-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+} */
+.full-gallery-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: initial;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.full-gallery-container > div:not(.profile-details-title) {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: calc(100vw - 192px); */
+}
+
+.full-gallery-img-container {
+  /* margin-bottom: 5rem;
+    margin-right: 2rem; */
+  margin: 0 1rem 3rem;
+}
+.full-gallery-img-inner-container {
+  position: relative;
+}
+
+.full-gallery-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 15%;
+}
+
+.heart-container {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  bottom: 11%;
+  left: 10%;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.heart-icon {
+  height: 20px;
+  width: 22px;
+  background-size: cover;
+}
+
+.memories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.memory-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .memory-img {
+    height: 45vh;
+    width: 25vw;
+  }
+}
+
+.memory-container {
+  margin-bottom: 5rem;
+}
+
+.profile-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.memory-actions {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 700px; */
+  margin: auto;
+}
+
+.memories-div {
+  padding-bottom: 3rem;
+}
+
+.profile-creation-title {
+  padding-bottom: 30px;
+  font-size: 70px !important;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #6097bf !important;
+}
+
+input[type='date']::before {
+  color: #abc9db;
+  content: attr(placeholder);
+  padding-left: 35%;
+}
+
+input[type='date'] {
+  text-align: unset;
+  color: #ffffff;
+}
+
+input[type='date']:focus,
+input[type='date']:valid {
+  color: #abc9db;
+}
+
+input[type='date']:focus::before,
+input[type='date']:valid::before {
+  content: '' !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .memorial-container,
+  .gallery-container {
+    padding: 2rem;
+  }
+  .gallery-img {
+    /* width: 180px;
+        height: 180px; */
+    width: 26vw;
+    height: 26vw;
+  }
+  .full-gallery-img {
+    width: 20vw;
+    height: 20vw;
+    min-width: 104px;
+    min-height: 104px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .profile-details .profile-img {
+    width: 20vw;
+    height: 20vw;
+    min-width: 100px;
+    min-height: 100px;
+    /* margin: 0 2rem 0px 1.5rem; */
+    margin: 0 0 20px 0;
+  }
+  .profile-details-first {
+    flex-direction: column;
+  }
+  .deceased-details {
+    margin: 0;
+    text-align: center;
+  }
+  .profile-details-title h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-details .btns-container,
+  .details-and-icons {
+    flex-direction: column;
+  }
+  /* .details-and-icons {
+        flex-direction: column;
+    } */
+  .memorial-details .separator {
+    display: none;
+  }
+  .memorial-details .dash {
+    display: initial;
+  }
+  .memorial-container,
+  .gallery-container {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .gallery-img {
+    width: 26vw;
+    height: 26vw;
+    border-radius: 8px;
+  }
+}
+.google_map {
+  width: 800px;
+  height: 500px;
+}
+@media only screen and (max-width: 1200px) {
+  .google_map {
+    width: 600px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .google_map {
+    width: 420px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .google_map {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .grave-imgs-container {
+    flex-direction: column;
+  }
+  .map_container {
+    width: 75%;
+  }
+  .profile-icons-container .icon-btn {
+    margin-left: 0;
+    margin-right: 20px;
+    width: 3.5rem;
+  }
+  .memorial-details h3 {
+    font-size: 24px;
+  }
+  .profile-h1 {
+    font-size: 30px;
+  }
+  .deceased-details p {
+    font-size: 18px;
+  }
+  .profile-big-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.8rem;
+  }
+  .profile-small-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+.up_down_btn {
+  margin-top: 0;
+}
+.up_down_btn:first-of-type {
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .up_down_btn {
+    height: 38px;
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .up_down_btn {
+    height: 32px;
+    width: 60px;
+  }
+}
+.candle_flower_item {
+  position: relative;
+}
+.candle_flower {
+  z-index: 99;
+  top: 35%;
+  left: 5%;
+}
+.candle_flower img {
+  width: 12vw;
+  cursor: pointer;
+}
+.candle_flower_count {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6097bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  right: 2%;
+  top: 8%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.candle_flower_user_list {
+  position: absolute;
+  top: 15%;
+  right: -60%;
+  background-color: #6097bf;
+  border-radius: 30px;
+  padding: 15px;
+  color: #fff;
+  height: 220px;
+  overflow-y: auto;
+  text-align: center;
+  max-width: 175px;
+  font-size: 18px;
+}
+.candle_flower_user_list ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media only screen and (max-width: 992px) {
+  .candle_flower {
+    top: 35%;
+  }
+  .candle_flower img {
+    width: 18vw;
+    cursor: pointer;
+  }
+  .candle_flower_count {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .candle_flower {
+    top: 40%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .candle_flower img {
+    width: 24vw;
+  }
+  .candle_flower {
+    top: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .candle_flower {
+    top: 43%;
+  }
+}
